@@ -18,3 +18,14 @@ function tryOne(s) {
 }
 
 console.log(tryOne('AbCd'))
+
+function tryTwo(s) {
+    let data = s.toLowerCase().split('')
+    for (let i = 0; i < data.length; i++) {
+        data[i]=data[i].toUpperCase()+data[i].repeat(i)
+    
+    }
+    return data.join('-')
+}
+
+console.log(tryTwo('AbCd'))
